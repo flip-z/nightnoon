@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nightnoon Security</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#121212",
+            panel: "#1b1b1b",
+            panelHigh: "#242424",
+            paper: "#f5f0e8",
+            moon: "#fff9e6",
+            muted: "#d8d3cb",
+            line: "#ffffff",
+            red: "#ff574a",
+            blue: "#4d8dff"
+          },
+          fontFamily: {
+            headline: ["Space Grotesk", "sans-serif"],
+            body: ["Inter", "sans-serif"]
+          },
+          boxShadow: {
+            hard: "6px 6px 0 0 #ffffff",
+            hardSoft: "4px 4px 0 0 rgba(255,255,255,.85)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    .moon-band {
+      clip-path: polygon(0 10%, 100% 0, 100% 88%, 0 100%);
+    }
+  </style>
+
+</head>
+
+<body class="min-h-screen bg-ink text-paper font-body antialiased">
+  <header class="border-b-4 border-line bg-panelHigh px-5 py-4 sm:px-8 lg:px-12">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-6">
+      <p class="font-headline text-2xl font-bold uppercase tracking-[.04em] text-moon">
+        Nightnoon Security
+      </p>
+</div>
+
+  </header>
+
+  <main>
+    <div class="relative isolate overflow-hidden">
+      <div class="moon-band pointer-events-none absolute inset-x-0 top-24 z-0 h-[17rem] rotate-[-2deg] border-y-4 border-line bg-moon opacity-15 sm:h-[21rem] lg:top-28 lg:h-[26rem]"></div>
+  <section class="relative z-10 px-5 py-12 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
+    <div class="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,.95fr)_minmax(360px,.75fr)] lg:items-end">
+      <div class="max-w-3xl">
+        <h1 class="font-headline text-[clamp(3.25rem,10vw,6.9rem)] font-bold uppercase leading-[.86] tracking-normal">
+          <span class="block text-moon">Practical</span>
+          <span class="block text-white">Security</span>
+          <span class="block text-red">Operations</span>
+        </h1>
+      </div>
+
+      <div class="border-4 border-line bg-panel p-6 shadow-hard sm:p-8">
+        <h2 class="font-headline text-2xl font-bold uppercase leading-tight text-white sm:text-3xl">
+          More signal. Less noise.
+        </h2>
+
+        <p class="mt-4 text-base font-medium leading-7 text-muted">
+          We help teams make better use of the security tools you already have, or select and implement new ones.
+        </p>
+
+        <a href="mailto:hello@nightnoon.example" class="mt-7 block border-4 border-line bg-red px-5 py-4 text-center font-headline text-xl font-bold uppercase text-white transition hover:bg-white hover:text-ink">
+          Get in touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative z-10 px-5 pb-16 sm:px-8 lg:px-12 lg:pb-24">
+    <div class="mx-auto max-w-6xl border-4 border-line bg-panelHigh p-6 shadow-hard sm:p-8 lg:p-10">
+      <h2 class="font-headline text-4xl font-bold uppercase leading-none text-white sm:text-5xl">
+        Services
+      </h2>
+
+      <div class="mt-8 grid gap-6 lg:grid-cols-2">
+        <article class="border-4 border-line bg-ink p-6 sm:p-8">
+          <p class="mb-4 inline-flex border-2 border-line bg-blue px-3 py-2 font-headline text-sm font-bold uppercase tracking-[.12em] text-white">
+            Project
+          </p>
+
+          <h3 class="font-headline text-3xl font-bold uppercase leading-tight text-moon">
+            Security operations development
+          </h3>
+
+          <p class="mt-4 text-lg font-medium leading-8 text-muted">
+            Need a focused review of your detection strategy, vulnerability management, or other operational weak spots? We can help level up your processes to get the most out of your tools, clean up messy workflows, or automate them away entirely.
+          </p>
+
+          <p class="mt-5 text-base font-semibold leading-7 text-paper">
+            Good for a team that needs some outside support for a tune-up, migration or expansion.
+          </p>
+        </article>
+
+        <article class="border-4 border-line bg-ink p-6 sm:p-8">
+          <p class="mb-4 inline-flex border-2 border-line bg-red px-3 py-2 font-headline text-sm font-bold uppercase tracking-[.12em] text-white">
+            Ongoing
+          </p>
+
+          <h3 class="font-headline text-3xl font-bold uppercase leading-tight text-moon">
+            Managed Security Operations
+          </h3>
+
+          <p class="mt-4 text-lg font-medium leading-8 text-muted">
+            Need a team of experts to manage your security operations layer? SIEM upkeep, alert tuning, detection work, triage workflows, incident follow-up, and reporting.
+          </p>
+
+          <p class="mt-5 text-base font-semibold leading-7 text-paper">
+            Good for a team that has security tools but does not have a full-time SOC, detection engineer, or security operations owner.
+          </p>
+        </article>
+      </div>
+
+      <div class="mt-10 grid gap-8 border-t-4 border-line pt-8 lg:grid-cols-[.8fr_1.2fr]">
+        <div>
+          <h2 class="font-headline text-4xl font-bold uppercase leading-none text-white sm:text-5xl">
+            About
+          </h2>
+
+          <div class="mt-6 aspect-[16/10] border-4 border-line bg-ink shadow-hardSoft">
+            <div class="flex h-full items-center justify-center p-6 text-center">
+              <p class="font-headline text-lg font-bold uppercase tracking-[.12em] text-muted">
+                Banner image placeholder
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-5 text-lg font-medium leading-8 text-muted">
+          <p>
+            The Nightnoon Security Team is led by Jon Massari, a security engineer and solutions engineer based in Connecticut.
+          </p>
+
+          <p>
+            We work directly with small teams that need practical help across the Security Operations landscape: SIEM, SOAR, CSPM, Vulnerability Management, and everything in between. We have deep experience with many vendors, from industry leaders like Splunk and Wiz to disruptive new players like Sublime, Tines, and Panther.
+          </p>
+
+          <p>
+            We pride ourselves on clear communication, direct accountability, and practical recommendations. You'll <u>never</u> deal with a salesperson that isn't going to be doing the actual work.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10 border-4 border-line bg-moon p-6 text-ink sm:p-8">
+        <h2 class="font-headline text-3xl font-bold uppercase leading-tight sm:text-4xl">
+          Contact
+        </h2>
+
+        <p class="mt-4 max-w-3xl text-lg font-semibold leading-8">
+          Send a short note with what is broken, what you are trying to improve, or what you need checked.
+        </p>
+
+        <a href="mailto:hello@nightnoon.example" class="mt-6 inline-block border-4 border-ink bg-red px-5 py-4 text-center font-headline text-xl font-bold uppercase text-white transition hover:bg-ink hover:text-white">
+          hello@nightnoon.example
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+  </main>
+
+  <footer class="border-t-4 border-line bg-panelHigh px-5 py-8 sm:px-8 lg:px-12">
+    <div class="mx-auto flex max-w-6xl flex-col gap-5 text-sm font-semibold uppercase tracking-[.08em] text-muted sm:flex-row sm:items-center sm:justify-between">
+      <p class="font-headline text-lg font-bold tracking-normal text-moon">
+        Nightnoon Security
+      </p>
+</div>
+
+  </footer>
+</body>
+</html>
